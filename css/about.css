@@ -1,0 +1,262 @@
+body {
+    overflow-x: hidden;
+}
+
+.caption {
+
+    padding-top: 60px;
+    margin: auto;
+    /* MARGIN TOP*/
+    margin-top: 130px;
+    line-height: 50px;
+
+}
+
+
+
+.title {
+    font-weight: 900;
+    font-size: xx-large;
+    font-family: 'B612', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    text-align: center;
+}
+
+.allteam {
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team {
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition: 0.4s;
+    box-sizing: border-box;
+}
+
+.team img {
+    width: 350px;
+    height: 350px;
+}
+
+.name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.descp {
+    font-style: italic;
+    color: #888;
+}
+
+.team4 {
+    opacity: 0.5;
+}
+
+/*.icones:hover{
+    transform: scale(1.5);
+}*/
+.sevices-caption {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    /* Adjust the gap as needed */
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.sevices-caption h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container2 {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.container2 img {
+    width: 85%;
+}
+
+.image-container2 {
+    display: none;
+}
+
+.container2 div h1 {
+    color: #181818;
+    font-size: 32px;
+}
+
+.container2 div p {
+    color: #02073e;
+    line-height: 45px;
+}
+
+.container2>div>span {
+    color: #3183ff;
+}
+
+.container2 div div span {
+    margin-right: 40px;
+    line-height: 45px;
+}
+
+.container2 div div span:last-child {
+    margin-left: 37px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* start services  */
+.otherServises {
+    background-color: #f9fafc;
+    padding: 10px;
+    text-align: center;
+}
+
+.sevices {
+    margin-top: 100px;
+    text-align: start;
+}
+
+.sevices .allCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.sevices .allCards:nth-child(2) {
+    margin-top: 60px;
+}
+
+.sevices .allCards .card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background-color: #1708c0; */
+    position: relative;
+    gap: 15px;
+}
+
+.sevices .allCards .card img {
+    width: 66px;
+    height: 66px;
+    margin-top: 12px;
+}
+
+.sevices .allCards .card span h1 {
+    font-size: 16px;
+}
+
+.sevices .allCards .card span small {
+    color: #8571ff;
+}
+
+@media (max-width: 1118px) {
+    div.sevices-caption {
+        padding-inline: 10px;
+    }
+
+    .container2 {
+        margin-top: 20px;
+    }
+
+    .sevices-caption h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
+    .otherServises {
+        margin: 0 -1%;
+    }
+}
+
+@media (max-width: 880px) {
+    section.container {
+        width: 95vw;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width : 1118px) {
+    .image-container {
+        display: none;
+    }
+
+    .image-container2 {
+        display: inline;
+    }
+}
+
+#open{
+   cursor: pointer;
+}
+.modal-container{
+    background-color: rgba(0,0,0,0.3);
+   text-align: center;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.3s ease;
+   position: fixed;
+   z-index: 50000;
+}
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    border-radius: 20px;
+    padding: 30px 50px;
+    background-color: #fff;
+    width: 40%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2) ;
+    font-size: 18px;
+}
+.modal h1{
+   margin: 0; 
+}
+.modal p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+.modal button{
+    background-color: rgb(25, 164, 118);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+

@@ -1,0 +1,23 @@
+.boody{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 153, 55);
+}
+
+.slide-container{
+    max-width: 112Opx;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 40px 0;
+    margin: 20px;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    width: 320px;
+}

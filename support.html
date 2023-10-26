@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Innovation-Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+     <link rel="stylesheet" href="css/fohe.css">
+     <meta name="description" content="support page">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!---boxicons link-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- REMIXICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+
+      <!-- HEADER -->
+      <header class="header">
+        <nav class="nav containernav">
+           <div class="nav__data">
+              <a href="#" class="nav__logo">
+                 <img src="img/logobrief-removebg-preview.png" alt="logo" width="50px"> Innovation
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <!-- NAV MENU -->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="index.html" class="nav__link">Home</a></li>
+
+                 <li><a href="advertise.html" class="nav__link">Advertise</a></li>
+
+                 <li><a href="support.html" class="nav__link">Support</a></li>
+                 
+                 <li><a href="about.html" class="nav__link">About</a></li>
+
+                 <li><a href="login.html" class="nav__link">Log in</a></li>
+
+                 <li><a href="#" class="nav__link">Get started</a></li>
+              </ul>
+           </div>
+        </nav>
+     </header>
+    
+
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="shape" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">keep in touch</h3>
+          <img src="img/image-removebg-preview (11).png" alt="image 2">
+
+          <div class="info">
+            <div class="information">
+              <i class='bx bxs-map' style='color:#65b1b1'  ></i>
+              <p>3972 Blue Spruce Lane</p>
+            </div>
+            <div class="information">
+              <i class='bx bx-envelope' style='color:#65b1b1' ></i>
+              <p>Support@innovation.com</p>
+            </div>
+            <div class="information">
+              <i class='bx bxs-phone-call' style='color:#65b1b1' ></i>
+              <p>410-388-1654</p>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="contact-form" id="form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form name="contact-form" onsubmit="sendEmail() ; reset(); return false ;">
+            <h3 class="title">Contact us</h3>
+
+            <div class="input-container">
+              <input type="text" name="name" class="input" id="contact-name" onkeyup="ValidateName()"/>
+              <label for="">Name</label>
+              <span>Name</span>
+              <p id="name-erreur"></p>
+              
+            </div>
+
+            <div class="input-container">
+              <input type="text" name="email" class="input" id="contact-email" onkeyup="ValidateEmail()"/>
+              <label for="">Email</label>
+              <span>Email</span>
+              <p id="email-erreur"></p>
+            </div>
+
+            <div class="input-container">
+              <input type="text" name="phone" class="input" id="contact-phone" onkeyup="ValidatePhone()"/>
+              <label for="">Phone</label>
+              <span>Phone</span>
+              <p id="phone-erreur"></p>
+            </div>
+
+            <div class="input-container textarea">
+              <textarea name="message" class="input" id="contact-message" onkeyup="ValidateMessage()"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+              <p id="message-erreur"></p>
+            </div>
+
+            <!--<div class="g-recaptcha" data-sitekey="your-recaptcha-site-key"></div>-->
+            <input type="submit" value="Send" class="btn" onclick=" return validateForm()"/>
+            <p id="submit-erreur"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<section class="all">
+    <div class="according">
+      <div class="image-box">
+        <img src="img/image-removebg-preview.png" alt="question">
+      </div>
+      <div class="according-text">
+        <div class="title">FAQ</div>
+        <ul class="faq-text">
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                How can I contact your customer support team?
+              </span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            <p>
+              <br>To contact our customer support team, you have several options: <br>
+               <b>Email</b>: You can send an email to Support@innovation.com for assistance. Our support team will respond to your email as soon as possible. <br>
+              <b>Phone</b> : You can reach our customer support team by calling 410-388-1654 during our business hours, which are [GMT+1]. <br>
+              <b>Contact Form</b> : You can use the contact form on this page to submit your inquiry or request. Please fill out the required fields, including your name, email address, subject, and message. Our team will get back to you through the contact details you provide</p> <br>
+            <span class="line"></span>
+          </li>
+
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                Do you have a physical office or location I can visit?
+              </span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            
+            <p>We do not have a physical office or location that you can visit. However, we are available online to assist you with any questions or concerns you may have. Please feel free to contact us through the provided channels, and we'll be happy to help.</p>
+            <br>
+            <span class="line"></span>
+          </li>
+
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                How long does it typically take to receiveresponse to my inquiry?
+              </span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            
+            <p>Our response time may vary depending on the nature of your inquiry and the volume of requests we receive. We strive to respond within 1-2 business days. Rest assured, your inquiry is important to us, and we'll do our best to address it promptly.</p>
+            <br>
+            <span class="line"></span>
+          </li>
+
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                Is my personal information safe when I submit a contact form?
+              </span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            
+            <p>We take your privacy and data security seriously. Your personal information submitted through our contact form is protected and treated with the utmost confidentiality. For more details on how we handle your data, please refer to our privacy policy.</p>
+            <br>
+            <span class="line"></span>
+          </li>
+
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                What should I include in my message when using the contact form?
+              </span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            
+            <p>When using the contact form, please provide as much detail as possible about your inquiry or concern. Including your name, contact information, and a clear description of the issue will help us assist you more effectively. The more information you provide, the better we can understand and address your needs.</p>
+             <br>
+            <span class="line"></span>
+          </li>
+
+          <li>
+            <div class="question-arrow">
+              <span class="question">
+                What should I do if I'm experiencing technical issues with your website or services?
+              </span>
+              <i class='bx bxs-chevron-down arrow'></i>
+            </div>
+            
+            <p>If you encounter technical issues with our website or services, please first check your internet connection and browser settings. If the issue persists, you can contact our support team through the contact form, and they will be ready to assist you in resolving the problem.</p>
+            <br>
+            <span class="line"></span>
+          </li>
+
+        <li>
+          <div class="question-arrow">
+            <span class="question">
+              Do I need an account to contact you or submit a form?
+            </span>
+            <i class='bx bxs-chevron-down'></i>
+          </div>
+          
+          <p>You do not need to have an account to contact us or submit a form. We welcome inquiries and feedback from both existing users and those who are not yet registered. Feel free to reach out, and we'll be happy to assist you.</p>
+          <br>
+          <span class="line"></span>
+        </li>
+
+        <li>
+          <div class="question-arrow">
+            <span class="question">
+              What languages is your support available in?
+            </span>
+            <i class='bx bxs-chevron-down'></i>
+          </div>
+          <p>Our support services are available in English , french and Arabic. We are committed to providing assistance to our users in these languages to ensure clear communication and excellent service. If your preferred language is not listed, please contact us, and we will do our best to accommodate your needs.</p>
+          <br>
+          <span class="line"></span>
+        </li>
+   </ul>
+      </div> 
+    </div>
+</section>
+
+
+ <!--footer-->
+ <footer>
+  <section class="footer">
+    <div class="footer-content">
+      <img src="img/logobrief-removebg-preview.png" alt="logo" width="80px">
+      <h1>Innovation</h1>
+      <p>Terms of use | Privacy</p>
+      <p>Copyright by 2019 YourName, Inc</p>
+    </div>
+
+    <div class="footer-content">
+      <h4 class="title">About Us</h4>
+      <ul>
+      <li class="footer-link"> <a href="index.html">Support Center</a> </li>
+      <li class="footer-link"> <a href="index.html">Customer Support</a> </li>
+      <li class="footer-link"> <a href="index.html">About Us</a> </li>
+      <li class="footer-link"> <a href="index.html">Copyright</a> </li>
+     </ul>
+    </div>
+
+    <div class="footer-content">
+      <h4 class="title">Our Information</h4>
+      <ul>
+      <li class="footer-link"> <a href="index.html">Return Policy</a> </li>
+      <li class="footer-link"> <a href="index.html">Privacy Policy</a> </li>
+      <li class="footer-link"> <a href="index.html">Terms & Conditions</a> </li>
+      <li class="footer-link"> <a href="index.html">Site Map</a> </li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h4 class="title">My Account</h4>
+      <ul>
+      <li class="footer-link"> <a href="index.html">Press inquiries</a> </li>
+      <li class="footer-link"> <a href="index.html">Social media </a> </li>
+      <li class="footer-link"> <a href="index.html">directories</a> </li>
+      <li class="footer-link"> <a href="index.html">Images & B-roll</a> </li>
+     </ul>
+    </div>
+
+    <div class="footer-content">
+      <h4 class="title">Connect</h4>
+      <ul>
+      <li class="footer-link"> <a href="index.html"><i class='bx bxl-facebook-circle icons' style='color:#0c14ff'></i> facebook
+        </a></li>
+      <li class="footer-link"> <a href="index.html"><i class='bx bxl-twitter icons' style='color:#22acef'></i>twiter</a> </li>
+      <li class="footer-link"> <a href="index.html"><i class='bx bxl-github icons' undefined></i>github</a> </li>
+      <li class="footer-link"> <a href="index.html"><i class='bx bxl-dribbble icons' style='color:#ff5c06'></i>Dribble</a> </li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
+
+
+
+    <script src="js/app.js"></script>
+    <script>
+      let li = document.querySelectorAll(".faq-text li");
+      for(var i = 0 ; i< li.length;i++){
+        li[i].addEventListener("click",(e)=>{
+          let clickedLi;
+          if(e.target.classList.contains("question-arrow")){
+            clickedLi = e.target.parentElement;
+            console.log(clickedLi);
+          }else{
+            clickedLi = e.target.parentElement.parentElement;
+          }
+          clickedLi.classList.toggle("showAnswer") ;
+    
+        })
+      }
+
+
+    </script>
+    <script src="js/header.js"></script>
+  </body>
+</html>

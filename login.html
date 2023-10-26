@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Innovation - Login Form</title>
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/fohe.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="login page">
+	 <!---boxicons link-->
+	 <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	 <!-- REMIXICONS-->
+	 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+	
+     <!-- HEADER -->
+     <header class="header">
+		<nav class="nav containernav">
+		   <div class="nav__data">
+			  <a href="#" class="nav__logo">
+				 <img src="img/logobrief-removebg-preview.png" alt="logo" width="50px"> Innovation
+			  </a>
+			  
+			  <div class="nav__toggle" id="nav-toggle">
+				 <i class="ri-menu-line nav__burger"></i>
+				 <i class="ri-close-line nav__close"></i>
+			  </div>
+		   </div>
+  
+		   <!-- NAV MENU -->
+		   <div class="nav__menu" id="nav-menu">
+			  <ul class="nav__list">
+				 <li><a href="index.html" class="nav__link">Home</a></li>
+  
+				 <li><a href="advertise.html" class="nav__link">Advertise</a></li>
+  
+				 <li><a href="support.html" class="nav__link">Support</a></li>
+				 
+				 <li><a href="about.html" class="nav__link">About</a></li>
+  
+				 <li><a href="login.html" class="nav__link">Log in</a></li>
+  
+				 <li><a href="#" class="nav__link">Get started</a></li>
+			  </ul>
+		   </div>
+		</nav>
+	 </header>
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/undraw_welcoming_re_x0qo.svg">
+		</div>
+		<div class="login-content" onSubmit="return validateForm();">
+			<form action="index.html">
+				<img src="img/undraw_home_screen_4n7s.png">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" id="username">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" id="password">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login"  onClick="return validateForm();">
+            </form>
+        </div>
+    </div>
+
+
+	 
+    <script  src="js/login.js"></script>
+	<script src="js/header.js"></script>
+</body>
+</html>

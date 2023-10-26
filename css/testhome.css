@@ -1,0 +1,366 @@
+body {
+    overflow-x: hidden;
+}
+.section1 {
+    margin-top: 150px;
+    text-align: center;
+    
+  }
+  
+  .section2 img {
+    margin-left: 5%;
+  }
+  
+  .section1 .main h1 {
+    color: #02073e;
+    font-size: 160%;
+  }
+  
+  .section1 .main p {
+    color: #02073e;
+  }
+  
+  .section1 .main button {
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 3px;
+    border-color: #ffffff00;
+    margin-top: 10px;
+    background-color: #0a8080;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  
+  .section1 .main button:hover {
+    color: white;
+    border-color: #0a8080;
+    background-color: #7fb8b8ad;
+    color: #0a8080;
+  }
+  
+  section.section2 {
+    height: 40vh;
+    background-color: #7fb8b8ad;
+    margin: 0 -4.9%;
+    margin-top: 440px;
+  }
+  
+  section.section2 .container {
+    position: relative;
+  }
+  
+  section.section2 .container img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 60px;
+    position: absolute;
+    left: 15%;
+    top: -150%;
+  }
+  
+  section.section2 .container {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+  }
+  
+  section.section2 .container .title {
+    margin-top: 100px;
+  }
+  section .section2{
+    width: 100%;
+  }
+  
+  section.section3 {
+    height: fit-content;
+    background-color:#7fb8b8ad;
+    margin: 0 -4.9%;
+  }
+  
+  section.section3 .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 0 0 200px;
+    padding: 0px 100px;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  section.section3 .container div {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+  }
+  
+  section.section3 .container div img {
+    width: 90px;
+  }
+  
+  section.section3 .container div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-width: 150px;
+  }
+  
+  section.section3 .container div div p {
+    margin-top: -10%;
+  }
+  
+  .section4 {
+    height: 35vh;
+    background-color: #7fb8b8ad;
+    margin: 0 -4.9%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .section4 .text p {
+    position: relative;
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+  }
+  
+  .section4 .text p span {
+    transform: translate(-50%, -50%);
+    color: #7e8896;
+    font-size: 10px;
+  }
+  
+  .section4 .text p img {
+    width: 40px;
+    position: absolute;
+    top: -10%;
+    left: -3%;
+  }
+  
+  .section5 {
+    height: 2vh;
+    background-color: #7fb8b8ad;
+    margin: 0 -4.9%;
+    padding: 90px;
+    padding-inline: 120px;
+  }
+  
+  .section5 .main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .section5 .main img {
+    min-width: 100%;
+  }
+  
+  .section6 {
+    margin: 80px -4.9%;
+    padding-inline: 100px;
+    background-image: url("../img/bgcontact.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .section6 .main {
+    height: 40vh;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .section6 .main .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 86%;
+    height: 30vh;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .section6 .main .form div h1 {
+    font-size: xx-large;
+    margin-top: 70px;
+  }
+  
+  .section6 .main .form div.subscribe input[type="text"] {
+    background-color: #d4dae2;
+    width: 280px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 80px;
+  }
+  
+  .section6 .main .form div.subscribe input[type="text"]:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .section6 .main .form div.subscribe button {
+    background-color: #db4a87;
+    padding: 15px 35px;
+    color: #f8f0ea;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .section6 .main .form div.subscribe input[type="checkbox"] {
+    background-color: #D4DAE2;
+    accent-color: #D4DAE2;
+    color: #d4dae2;
+    margin-top: 10px;
+  }
+  
+  .section6 .main .form div.subscribe label {
+    color: #d4dae2;
+  }
+  
+  .section7 {
+    margin-top: 70px;
+  }
+  
+  .section7 .title {
+    font-size: xx-large;
+  }
+  
+  section .section7 .caption .title {
+    color: #0F2137;
+    font-size: 20px;
+    font-family: B612;
+    font-weight: 700;
+    line-height: 35px;
+    word-wrap: break-word
+  }
+  
+  section .section7 .allclas .cla2 .cla21 {
+    background-color: antiquewhite;
+    margin-left: 2rem;
+    color: #0F2137;
+    font-size: 20px;
+    font-family: B612;
+    font-weight: 700;
+    line-height: 35px;
+    word-wrap: break-word
+  }
+  
+  .section7 .allclas {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .section7 .allclas .cla1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  
+  .section7 .allclas .cla2 {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  
+  .section7 .allclas .cla3 {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  
+  }
+  
+  
+  
+  @media (max-width: 880px) {
+    .section1 {
+      padding: 70px 40px 10px;
+    }
+  
+    .section1 .main img {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .section2 {
+      height: 50vh;
+      background-color: #7fb8b8ad;
+      margin: -2%;
+      margin-top: 150px;
+    }
+  
+    .section2 .container img {
+      width: 70%;
+      height: auto;
+      margin-bottom: 60px;
+      position: absolute;
+      left: 15%;
+      top: -30%;
+    }
+  
+    .section3 {
+      height: fit-content;
+      background-color: #7fb8b8ad;
+      margin: 0 -2%;
+    }
+  
+    .section3 .container div {
+      padding-left: 0px;
+      padding-right: 0px;
+      gap: 2px;
+    }
+  
+    .section3 .container {
+      padding-top: 50px;
+    }
+  
+    .section4 {
+      height: 70vh;
+      margin: 0 -2%;
+    }
+  
+    .section5 {
+      height: 66vh;
+      margin: 0 -2%;
+    }
+  
+    .section6 {
+      margin: 80px -2%;
+      padding-inline: 5px;
+    }
+  
+    .section6 .main {
+      height: 100vh;
+    }
+  
+    .section6 .main .form {
+      height: 60vh;
+      padding-bottom: 12%;
+    }
+  
+    .section6 .main .form div.subscribe button {
+      margin-top: 30px;
+    }
+  
+    .section6 .main .form div.subscribe input[type="checkbox"] {
+      margin-top: 10px;
+    }
+  }
