@@ -3,6 +3,7 @@
 
 ## Project Description
 This project aims to enhance the interactive aspect of  Innovations website by adding various interactive features. The focus will be on creating a better user experience through the integration of design mockups and the implementation of interactive elements.
+Also the project aims to accelerate the development of the startup ecosystem  and establish a showcase for the sector internationally by bringing together various stakeholders around a digital platform that supports startups throughout their lifecycle, incorporating concrete measures to support their development.
 
 ## Key Features
 - Design Mockup: Create mobile-specific mockups.
